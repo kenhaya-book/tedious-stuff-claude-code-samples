@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'ファイルが書き込まれました' >> /tmp/claude-log.txt"
+          }
+        ]
+      }
+    ]
+  }
+}

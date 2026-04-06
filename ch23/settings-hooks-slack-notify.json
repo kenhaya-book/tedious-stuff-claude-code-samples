@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "http",
+            "url": "$SLACK_WEBHOOK_URL",
+            "allowedEnvVars": ["SLACK_WEBHOOK_URL"],
+            "timeout": 10,
+            "statusMessage": "Slackに通知中..."
+          }
+        ]
+      }
+    ]
+  }
+}

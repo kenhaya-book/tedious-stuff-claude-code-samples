@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "WebSearch"
+    ],
+    "deny": [
+      "Bash(rm -rf",
+      "Bash(sudo",
+      "Bash(chmod 777",
+      "Bash(curl * | bash",
+      "Edit(~/.ssh/",
+      "Write(~/.ssh/",
+      "Read(~/.ssh/",
+      "Edit(~/.aws/",
+      "Write(~/.aws/",
+      "Edit(.env",
+      "Read(.env",
+      "Edit(.env.local",
+      "Read(.env.local",
+      "Edit(credentials.json",
+      "Read(credentials.json"
+    ],
+    "sandbox": true
+  }
+}

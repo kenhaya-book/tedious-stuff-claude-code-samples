@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls",
+      "Bash(cat",
+      "Bash(pwd",
+      "Bash(date",
+      "Bash(wc",
+      "Bash(head",
+      "Bash(tail",
+      "Bash(which",
+      "Bash(git status",
+      "Bash(git log",
+      "Bash(git diff",
+      "Bash(python -c"
+    ],
+    "deny": [
+      "Bash(rm -rf",
+      "Bash(sudo",
+      "Bash(chmod 777",
+      "Bash(curl",
+      "Bash(wget"
+    ]
+  }
+}

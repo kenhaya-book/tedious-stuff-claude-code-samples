@@ -1,0 +1,16 @@
+{
+  "company": "サンプル株式会社",
+  "departments": [
+    {
+      "name": "営業部",
+      "members": 25,
+      "manager": "田中太郎"
+    },
+    {
+      "name": "開発部",
+      "members": 40,
+      "manager": "佐藤花子"
+    }
+  ],
+  "founded": 2010
+}

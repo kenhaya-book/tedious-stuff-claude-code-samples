@@ -1,0 +1,21 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Node.js (if running MCP servers locally)
+node_modules/
+
+# Temporary files
+*.tmp
+*.log
+
+# Environment files with real secrets
+.env
+.env.local

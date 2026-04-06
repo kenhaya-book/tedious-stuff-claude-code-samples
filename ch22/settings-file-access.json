@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(~/.ssh/",
+      "Write(~/.ssh/",
+      "Read(~/.ssh/",
+      "Edit(~/.aws/",
+      "Write(~/.aws/",
+      "Edit(.env",
+      "Read(.env"
+    ]
+  }
+}

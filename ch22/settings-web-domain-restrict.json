@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(https://docs.anthropic.com",
+      "WebFetch(https://github.com"
+    ]
+  }
+}
