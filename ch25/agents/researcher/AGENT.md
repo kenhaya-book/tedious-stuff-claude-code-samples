@@ -1,7 +1,7 @@
 ---
 name: researcher
 description: Web検索で情報を収集するエージェント
-model: claude-sonnet-4-6-20250514
+model: claude-sonnet-4-6
 tools: Read, Grep, Glob, WebSearch
 ---
 
