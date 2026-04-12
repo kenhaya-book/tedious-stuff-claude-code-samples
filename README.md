@@ -1,5 +1,9 @@
 # めんどくさいことはClaude Codeにまかせよう — サンプルファイル集
 
+<p align="center">
+  <img src="cover.png" alt="めんどくさいことはClaude Codeにまかせよう" width="300">
+</p>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 書籍「**めんどくさいことはClaude Codeにまかせよう — AIエージェントではじめる日常タスクの自動化**」（Ken Haya 著）で紹介しているサンプルファイル、設定テンプレート、スキル定義を章ごとにまとめたリポジトリです。
@@ -196,7 +200,7 @@ samples/
 
 | ファイル | 内容 |
 |---------|------|
-| `sales.csv` | 練習用の売上CSVファイル（3行） |
+| `sales.csv` | 練習用の売上CSVファイル（ヘッダー＋3行） |
 
 ### ch06/ — CLAUDE.md（第6章）
 
