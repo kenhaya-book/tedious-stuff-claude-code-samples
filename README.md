@@ -43,7 +43,7 @@ cd tedious-stuff-claude-code-samples
 
 ```bash
 # 例: セキュリティ設定をグローバルに適用
-cp ch37/settings-security.json ~/.claude/settings.json
+cp ch40/settings-security.json ~/.claude/settings.json
 ```
 
 > **注意**: 既存の `settings.json` がある場合は、上書きではなく内容をマージしてください。
@@ -58,7 +58,7 @@ cp ch37/settings-security.json ~/.claude/settings.json
 
 ```bash
 # 例: 議事録フォーマッタースキルをインストール
-cp -r ch24/skills/format-minutes ~/.claude/skills/
+cp -r ch27/skills/format-minutes ~/.claude/skills/
 
 # Claude Codeで使う
 # > /format-minutes meeting-notes.txt
@@ -73,7 +73,7 @@ cp -r ch24/skills/format-minutes ~/.claude/skills/
 
 ```bash
 # 例: ファクトチェッカーエージェントをインストール
-cp -r ch25/agents/fact-checker ~/.claude/agents/
+cp -r ch28/agents/fact-checker ~/.claude/agents/
 ```
 
 ### CLAUDE.md（プロジェクト設定テンプレート）
@@ -112,12 +112,12 @@ claude mcp add --transport http --scope user gmail https://gmail.mcp.claude.com/
 
 ```bash
 # 例: 練習用CSVをホームディレクトリにコピー
-cp ch14/sales.csv ~/
-cp ch14/dirty_data.csv ~/
+cp ch19/sales.csv ~/
+cp ch19/dirty_data.csv ~/
 
 # シェルスクリプトに実行権限を付与
-chmod +x ch17/new_project.sh
-chmod +x ch23/hooks/session-start.sh
+chmod +x ch22/new_project.sh
+chmod +x ch26/hooks/session-start.sh
 ```
 
 ---
@@ -143,45 +143,45 @@ chmod +x ch23/hooks/session-start.sh
 
 ```
 samples/
-├── ch04/          第4章: Claude Codeの基本操作
+├── ch05/          第5章: Claude Codeの基本操作
 │   └── sales.csv
-├── ch06/          第6章: CLAUDE.md
+├── ch07/          第7章: CLAUDE.md
 │   ├── global-claude.md
 │   ├── project-claude-manual.md
 │   ├── project-claude-sales.md
 │   └── rules/
-├── ch14/          第14章: データの整理と分析
+├── ch19/          第19章: データの整理と分析
 │   ├── sales.csv
 │   ├── config.json
 │   └── dirty_data.csv
-├── ch17/          第17章: ファイル管理と整理術
+├── ch22/          第22章: ファイル管理と整理術
 │   └── new_project.sh
-├── ch22/          第22章: 権限設定を使いこなす
+├── ch25/          第25章: 権限設定を使いこなす
 │   ├── settings-basic.json
 │   ├── settings-bash-permissions.json
 │   ├── settings-file-access.json
 │   ├── settings-mcp-permissions.json
 │   └── settings-web-domain-restrict.json
-├── ch23/          第23章: Hooks
+├── ch26/          第26章: Hooks
 │   ├── settings-hooks-basic.json
 │   ├── settings-hooks-session.json
 │   ├── settings-hooks-slack-notify.json
 │   └── hooks/session-start.sh
-├── ch24/          第24章: カスタムスキル
+├── ch27/          第27章: カスタムスキル
 │   └── skills/ (6スキル)
-├── ch25/          第25章: サブエージェント
+├── ch28/          第28章: サブエージェント
 │   ├── agents/ (2エージェント)
 │   └── skills/ (1スキル)
-├── ch27/          第27章: 個人タスク管理システム
+├── ch30/          第30章: 個人タスク管理システム
 │   ├── skills/ (4スキル)
 │   └── mcp-servers.json
-├── ch37/          第37章: セキュリティと安全な運用
+├── ch40/          第40章: セキュリティと安全な運用
 │   ├── settings-security.json
 │   └── env.example
-├── ch38/          第38章: Agent Teams
+├── ch41/          第41章: Agent Teams
 │   ├── settings-agent-teams.json
 │   └── agents/ (3エージェント)
-├── ch39/          第39章: 設定の完全ガイド
+├── ch42/          第42章: 設定の完全ガイド
 │   ├── settings-complete.json
 │   └── mcp-config.json
 ├── appendix_d/    付録D: MCPサーバー設定テンプレート集
@@ -196,13 +196,13 @@ samples/
 
 ## 各章のサンプル詳細
 
-### ch04/ — Claude Codeの基本操作（第4章）
+### ch05/ — Claude Codeの基本操作（第5章）
 
 | ファイル | 内容 |
 |---------|------|
 | `sales.csv` | 練習用の売上CSVファイル（ヘッダー＋3行） |
 
-### ch06/ — CLAUDE.md（第6章）
+### ch07/ — CLAUDE.md（第7章）
 
 | ファイル | 内容 |
 |---------|------|
@@ -213,7 +213,7 @@ samples/
 | `rules/02-language.md` | ルールファイル例: 言語設定 |
 | `rules/03-communication.md` | ルールファイル例: コミュニケーションルール |
 
-### ch14/ — データの整理と分析（第14章）
+### ch19/ — データの整理と分析（第19章）
 
 | ファイル | 内容 |
 |---------|------|
@@ -221,13 +221,13 @@ samples/
 | `config.json` | JSONサンプル（会社情報の入れ子構造） |
 | `dirty_data.csv` | データクリーニング練習用CSV（全角/半角混在） |
 
-### ch17/ — ファイル管理と整理術（第17章）
+### ch22/ — ファイル管理と整理術（第22章）
 
 | ファイル | 内容 |
 |---------|------|
 | `new_project.sh` | 新規案件フォルダ自動作成スクリプト |
 
-### ch22/ — 権限設定を使いこなす（第22章）
+### ch25/ — 権限設定を使いこなす（第25章）
 
 | ファイル | 内容 |
 |---------|------|
@@ -237,7 +237,7 @@ samples/
 | `settings-mcp-permissions.json` | MCPツールの読み書き分離設定 |
 | `settings-web-domain-restrict.json` | WebFetchのドメイン制限設定 |
 
-### ch23/ — Hooks（第23章）
+### ch26/ — Hooks（第26章）
 
 | ファイル | 内容 |
 |---------|------|
@@ -246,7 +246,7 @@ samples/
 | `settings-hooks-slack-notify.json` | 作業完了時のSlack通知HTTPフック設定 |
 | `hooks/session-start.sh` | セッション開始時の環境準備スクリプト |
 
-### ch24/ — カスタムスキル（第24章）
+### ch27/ — カスタムスキル（第27章）
 
 | ファイル | 内容 |
 |---------|------|
@@ -257,7 +257,7 @@ samples/
 | `skills/project-status/SKILL.md` | プロジェクト状況レポート（Command型） |
 | `skills/safe-reader/SKILL.md` | 読み取り専用スキル（`allowed-tools`制限付き） |
 
-### ch25/ — サブエージェント（第25章）
+### ch28/ — サブエージェント（第28章）
 
 | ファイル | 内容 |
 |---------|------|
@@ -265,7 +265,7 @@ samples/
 | `agents/researcher/AGENT.md` | 調査エージェント定義 |
 | `skills/background-search/SKILL.md` | バックグラウンド検索スキル（`context: fork`） |
 
-### ch27/ — 個人タスク管理システム（第27章）
+### ch30/ — 個人タスク管理システム（第30章）
 
 | ファイル | 内容 |
 |---------|------|
@@ -275,14 +275,14 @@ samples/
 | `skills/weekly/SKILL.md` | 週次レビュースキル（`/weekly`） |
 | `mcp-servers.json` | 4サーバー構成のMCP設定（Gmail/Calendar/Slack/Notion） |
 
-### ch37/ — セキュリティと安全な運用（第37章）
+### ch40/ — セキュリティと安全な運用（第40章）
 
 | ファイル | 内容 |
 |---------|------|
 | `settings-security.json` | セキュリティ重視の権限設定（サンドボックス付き） |
 | `env.example` | `.env.example`テンプレート（機密情報のダミー値） |
 
-### ch38/ — Agent Teams（第38章）
+### ch41/ — Agent Teams（第41章）
 
 | ファイル | 内容 |
 |---------|------|
@@ -291,7 +291,7 @@ samples/
 | `agents/analyst.md` | 分析エージェント（チームメイト定義） |
 | `agents/writer.md` | 執筆エージェント（チームメイト定義） |
 
-### ch39/ — 設定の完全ガイド（第39章）
+### ch42/ — 設定の完全ガイド（第42章）
 
 | ファイル | 内容 |
 |---------|------|
@@ -337,7 +337,7 @@ samples/
 
 ## 対応バージョン
 
-- **Claude Code**: v2.1系（2026年3〜4月時点）
+- **Claude Code**: v2.1系（2026年7月時点）
 - 最新の仕様変更は[公式ドキュメント](https://code.claude.com/docs/en)および[変更履歴](https://code.claude.com/docs/en/changelog)を参照してください
 
 ## 書籍情報

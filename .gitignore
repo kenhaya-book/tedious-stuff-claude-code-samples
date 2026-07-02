@@ -19,3 +19,8 @@ node_modules/
 # Environment files with real secrets
 .env
 .env.local
+
+# LaTeX build artifacts (accidental)
+*.aux
+*.fdb_latexmk
+*.fls
